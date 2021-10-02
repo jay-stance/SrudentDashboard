@@ -1,0 +1,55 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% load crispy_forms_tags %} 
+{% block content %}
+<section class='text-center container'>
+    <h2>Student Dictionary</h2>
+    <p>Enter any word to get the phonetics, definition and an example for the word</p>
+    <form style="margin-bottom: 3rem;" action="" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input class="btn btn-danger" type="submit" value="Submit">
+    </form>
+    <br>
+    {% if input %}
+        <a class="text-left my-4">
+            <div class="card_">
+                <div class="body_card">
+                    <div class="row">
+                        <div style="display: flex;justify-content: center;align-items: center;" class="col-md-3">
+                            <audio id="player" src="{{audio}}"></audio>
+                            <a onClick="document.getElementById('player').play()">
+                                <i class='fa fa-volume-up fa-2x'></i>   
+                            </a>
+
+                        </div>
+                        <div class="text-left col-md-9">
+                            <h3 class="p-0 m-0">{{input}}</h3>
+                            <b>
+                                <u>
+                                    <h5 style="margin-bottom: 1rem;" class="p-0 m-1">{{phonetics}}</h5>
+                                </u>
+                            </b>
+                            {% if definition %}
+                            <h6 class="p-0 m-1">{{definition}}</h6>                            
+                            {% endif %}
+                            <b> 
+                            {% if result.categories %}
+                                <h6 class="ml-0 mt-3">Category: </h6>
+                                {% for word in synonyms %}
+                                    {{ word }}
+                                {% endfor %}
+                            {% endif %}
+                            <h6 class="ml-0 mt-1">Definition: {{definition}} </h6>                            
+                            <h6 class="ml-0 mt-1">Examples: {{example}} </h6>                            
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    {% else %}
+        {% comment %} <h2>Sorry, API request limit exceeded</h2> {% endcomment %}
+    {% endif %}
+</section>
+{% endblock content %}

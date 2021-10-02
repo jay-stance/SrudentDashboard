@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet|Quicksand|Barlow");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Patrick Hand', cursive;
+}
+
+h1,
+h2 {
+    font-family: 'Anton', "poppins" !important;
+    /* font-family: "montserrat"; */
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: "poppins";
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+main {
+    font-family: "poppins" Barlow, Quicksand, Rubik, sans-serif, serif, 'Times New Roman', Times, serif !important;
+}
+
+footer {
+    font-family: Rubik, sans-serif, serif, 'Times New Roman', Times, serif;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid #3333ec;
+    transition: .5s all ease-in-out;
+}
+
+.card:hover {
+    color: #fff;
+    background: #3333ec;
+    transition: .5s all ease-in-out;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-header:hover {
+    background: #3333ec;
+    color: whitesmoke !important;
+    transition: 0.1s ease-in;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.custom-header:hover {
+    background: rgb(143, 189, 186) !important;
+}
+
+.card-header {
+    color: black !important;
+    background: #98d6e6 !important;
+    transition: 0.3s ease-in;
+}
+
+.nav-link:hover {
+    background: black !important;
+    color: white !important;
+    transition: 0.7s ease;
+}
+
+.icon-bar {
+    color: black;
+}
+
+.card h4 {
+    margin: 40px 40px 0 40px;
+    text-align: left;
+}
+
+.card h6 {
+    margin: 25px 40px 0 40px;
+    text-align: left;
+}
+
+.card p {
+    text-align: right;
+    margin-right: 50px;
+    line-height: 10px;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+    padding: .8em 1.4em;
+    padding-right: 4.7em;
+    background: #009ED8;
+    border: none;
+    color: white;
+}
+
+.card img {
+    height: 210px;
+}
+
+
+/* .card:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: 0.5s ease;
+} */
+
+.card-header {
+    background-color: rgb(133, 204, 231);
+}
+
+.myimage {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card-img-top:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+
+.col-md-3 .card {
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.fa:hover {
+    color: red;
+}
+
+.fa {
+    color: black;
+}
+
+.profa {
+    color: black;
+}
+
+footer .container-fluid {
+    padding: 10vmin 10vmin;
+}
+
+footer .column a+a {
+    padding: 0 0.7em;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+
+/* 
+.content-section a:hover {
+    background: red;
+} */
+
+.account-img {
+    height: 125px !important;
+    width: 125px !important;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+.account-heading {
+    font-size: 2.5rem;
+}
+
+.head_1 {
+    font-family: "poppins" !important;
+    font-size: 2rem !important;
+}
+
+.container {
+    margin-bottom: 4rem;
+}
+
+.note_header {
+    background: transparent !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes:hover {
+    cursor: pointer;
+}
+
+.notes:hover .card {
+    cursor: pointer;
+    background: #fff !important;
+    color: inherit;
+}
+
+.note_header i {
+    font-size: 1rem;
+}
+
+td i {
+    font-size: 1rem !important;
+    color: red !important;
+}
+
+.body_card {
+    padding: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    transition: .5s all ease-in;
+    border: 1px solid #3333ec;
+}
+
+.body_card img {
+    height: 100% !important;
+}
+
+.body_card:hover {
+    background: #fff;
+    transform: translateY(-5%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: .5s all ease-in;
+}
