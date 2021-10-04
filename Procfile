@@ -1,1 +1,1 @@
-web: gunicorm studentsstudtportal.wsgi
+web: gunicorn studentsstudtportal.wsgi
