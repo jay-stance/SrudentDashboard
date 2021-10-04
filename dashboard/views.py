@@ -219,8 +219,7 @@ def dictionary(request):
         except:
             print("---------------------")
             context = {
-                "form": form,
-                "input": input
+                "form": form
             }
         return render(request, "dashboard/dictionary.html" , context)
     else: 
